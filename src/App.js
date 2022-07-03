@@ -1,11 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import NavBar from './component/NavBar.Js';
+import React from 'react';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <div class="flex justify-between bg-black">
+            <div>
+              <a href="#"> Logo </a>
+            </div>
+            <div>
+              <a href="#"> About </a>
+            </div>
+        </div>
+      </header>
+      <body>
+      <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -17,7 +29,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </body>
     </div>
   );
 }
